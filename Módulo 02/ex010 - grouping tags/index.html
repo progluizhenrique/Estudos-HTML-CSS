@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: arial, Helvetica, sans-serif;
+            background-color: #0B2624;
+            margin: 0px;
+        }
+
+        header {
+            background-color: #D5E7F2;
+            padding: 5px;
+            margin: 8px;
+            border-radius: 10px 0px;
+        }
+
+        header > h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2.5em;
+            margin-left: 10px;
+        }
+
+        nav {
+            background-color: #0B2624;
+            padding: 3px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.502);
+        }
+
+        nav > a {  
+            color: #D5E7F2;
+            text-decoration: none;
+            margin-right: 30px;
+            font-weight: bold;
+        }
+
+        nav > a:hover {
+            color: #96B3D9;
+        }
+
+        main {
+            background-color: #D5E7F2;
+            margin: 8px;
+            padding: 5px;
+            border-radius: 10px 0px;
+        }
+
+        main > h2 {
+            text-align: center;
+        }
+
+        article {
+            background-color: #96B3D9;
+            padding: 5px;
+            margin: 8px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.502);
+        }
+
+        article > p{
+            text-align: justify;
+        }
+
+        article:hover {
+            background-color: #7EBFB3;
+        }
+
+        article > a {
+            text-decoration: none;
+            color: black;
+            text-align: justify;
+        }
+
+        aside {
+            font-size: 0.8em;
+            text-align: right;
+        }
+
+        footer {
+            background-color: #000;
+            color: #D5E7F2;
+            margin: 10px 0px 0px 0px;
+            padding: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brasilpedia</h1>
+        <nav>
+            <a href="#">Notícias</a>
+            <a href="#">Cultura</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Política</a>
+            <a href="#">Ciência</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Notícias Atuais no Brasil e no Mundo</h2>
+        <article>
+            <a href="https://www.cnnbrasil.com.br/politica/manifestantes-furam-bloqueio-e-entram-na-esplanada-em-brasilia/" target="_blank" rel="external">
+                <h3>Invasão aos Prédios dos Três Poderes</h3>
+                <p>Saiba mais sobre o ataque feito por terroristas aos prédios dos três poderes em Brasília. Descubra o que motivou a ação e quais os danos causados.</p>
+                <aside>
+                    <p>Escrito por Paulo Piloto</p>
+                </aside>
+            </a> 
+        </article>
+        <article>
+            <a href="https://www.jota.info/eleicoes/saiba-quem-sao-os-ministros-escolhidos-por-lula-02012023" target="_blank" rel="external">
+                <h3>Ministros do Governo Lula</h3>
+                <p>Veja a recepção e falas dos novos ministros do governo Lula. O que os internaltas acharam deles?</p>
+                <aside>
+                    <p>Escrito por Débora Leitão</p>
+                </aside>
+            </a>
+        </article>
+        <article>
+            <a href="https://g1.globo.com/mundo/noticia/2023/01/10/em-um-so-dia-18-morrem-em-protestos-contra-o-governo-no-peru.ghtml" target="_blank" rel="external">
+                <h3>Protestos no Peru Acabam em Morte</h3>
+                <p>País vive onda de manifestações desde que o presidente Pedro Castillo foi deposto. 18 morrem no Peru em dia mais letal de protestos, bebê está entre as vítimas.</p>
+                <aside>
+                    <p>Escrito por Mario Alencar</p>
+                </aside>
+            </a>
+        </article>
+    </main>
+    <footer>
+        <p>Artigo feito por Luiz Henrique - 10/01/2023</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos em CSS</title>
+    <style>
+
+        /*
+        Um pseudo-elemento permite estilizar uma parte específica do elemento, como a primeira linha, o que vem ou o que vem depois e etc
+        */
+
+        body {
+            font-family: Roboto, sans-serif;
+        }
+
+        a {
+            color: darkred;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(139, 0, 139);
+        }
+        
+        a:active {
+            color: black;
+        }
+
+        .especial::before {
+            content: '⇨ ';
+        }
+
+        .especial::after {
+            content: ' ⇦';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://youtu.be/2T9b47ZtwQU" target="_blank">Coisa Boa</a></li>
+        <li class="especial"><a href="https://youtu.be/fJLQCf4mFP0" target="_blank">I Wanna Be Yours</a></li>
+        <li><a href="https://youtu.be/ZYpzn8DitbQ" target="_blank">Codinome Beija-Flor</a></li>
+    </ul>
+</body>
+</html>

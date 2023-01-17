@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*
+Em HTML id = # em CSS
+Em HTML class = . em CSS
+
+A diferença é que o Id só pode ser utilizado uma única vez
+já o class pode ser utilizada várias vezes
+
+Caso se tenha um class e um id em um mesmo elemento o id
+sobrepoem ao class
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FEBFFE;
+}
+p{
+    text-align: justify;
+    color: #392a39;
+}
+h1{
+    color: #4D394D;
+    text-align: center;
+}
+h2#html{
+    background-color: #0073B3;
+    color: #FEBFFE;
+}
+h2#css{
+    background-color: #B36C11;
+    color: #FEBFFE;
+}
+h3.basico{
+    color: darkgreen;
+}
+h3.intermediario{
+    color: darkgoldenrod;
+}
+h3.avancado{
+    color: darkred;
+}
