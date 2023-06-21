@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 70px auto;
+    transition: all 0.1s linear;
+}
+
+div:hover  {
+    width: 250px;
+    height: 250px;
+}

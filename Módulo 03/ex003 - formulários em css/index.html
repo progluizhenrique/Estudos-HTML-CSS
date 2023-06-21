@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formatação de Formulários em CSS</h1>
+    <form action="teste.html" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>Nome Completo:
+                <input type="text" name="nome" required>
+            </label>
+
+            <label>CPF:
+                <input type="text" name="cpf" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>Nome da Empresa:
+                <input type="text" name="nomeemp" required>
+            </label>
+
+            <label>CNPJ:
+                <input type="text" name="cnpj" required>
+            </label>
+        </fieldset>
+
+        <label>Comentários:
+            <textarea name="comentario"></textarea>
+        </label>
+
+
+        <label>Opções:
+            <select name="options">
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+            <option value="3">Opção 3</option>
+            <option value="4">Opção 4</option>
+            <option value="5">Opção 5</option>
+        </select></label>
+
+        
+        <label><input type="checkbox">Eu li e aceito os <a href="teste.html" target="_blank" class="termoslink">termos de uso</a></label>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

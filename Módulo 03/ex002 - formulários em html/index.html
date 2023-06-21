@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!--<form> define a área de um formulário
+    O atributo action recebe o local de envio das informações
+    O atributo method define o tipo de envio da informação
+    method pode ser get onde os dados são anexados na URL sendo visíveis
+    ou post sendo visível apenas ao servidor
+    O atributo enctype permite converter arquivos em bytes para enviar ao 
+    servidor-->
+    <!--<input> define um campo de entrada de dados de diversos tipos-->
+    <!--<select> define uma seleção entre opções dadas por <option>-->
+    <!--<textarea> cria um espaço que permite textos maiores-->
+    <!--<label> relaciona um texto a um dos recebidores de informação
+    sendo necessário para isso um id neles e um for no label-->
+
+    <h1>Formulários</h1>
+    <h2>Tags de Recebimento de Dados</h2>
+    <form action="teste.html" method="get" enctype="multipart/form-data">
+        <input type="text" name="nome">
+        <input type="email" name="email">
+        <input type="tel" name="telefone">
+        <input type="file" name="foto" accept="image/*">
+        <input type="file" name="pdf" accept="application/pdf">
+        <input type="password" name="senha">    
+        <input type="radio" name="sexo" value="masculino">
+        <input type="radio" name="sexo" value="feminino">
+        <input type="date" name="nascimento">
+        <input type="number" name="avaliacao" min="1" max="5">
+        <input type="checkbox" name="termos">
+        <input type="submit" value="Enviar Dados">
+    </form>
+
+    <form action="teste.html" method="get">
+        <label for="order">Ordenar Produtos</label>
+        <br>
+        <select name="order" id="order">
+            <option value="bestseller">Mais Vendido</option>
+            <option value="last">Lançamento</option>
+            <option value="cheaper">Menor Preço</option>
+        </select>
+        <input type="submit" value="Aplicar Seletor">
+    </form>
+
+    <form action="teste.html" method="get">
+        <label for="comentario">Comentário</label>
+        <br>
+        <textarea name="comentarios" id="comentario"></textarea>
+        <input type="submit" value="Enviar Comentário">
+    </form>
+
+    <!--Um mesmo formulário pode ser separado em diferentes partes
+        para isso podemos usar a tar <fieldset>, com título dado por
+        <legend> -->
+    <!--O parâmetro required torna obrigatorio o preenchimento do 
+        campo, já o mim e max se aplicam para números e minlength e 
+        maxlength se aplicam para textos-->
+    
+    <h2>Divisão de Um Formulário e Validação Nativa</h2>
+    <form action="teste.html" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Nome:
+                <input type="text" name="nome" required minlength="2">
+            </label>
+            <label>
+                CPF:
+                <input type="text" name="cpf" required minlength="11"  maxlength="11">
+            </label>
+            <label>
+                Idade:
+                <input type="number" name="idade" required min="18">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                CNPJ:
+                <input type="text" name="cnpj" required minlength="14"  maxlength="14">
+            </label>
+            <label>
+                Nome da Empresa:
+                <input type="text" name="nomeemp" required>
+            </label>
+            <label>
+                Data de Fundação:
+                <input type="date" name="datafun" required max="2022-12-31">
+            </label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar Dados">
+    </form>
+
+    <!--O parâmetro autocomplete permite ou proibe o navegador 
+        auto preencher de terminado campo, muito utilizado em
+        <input> de tipo search-->
+
+    <h2>Autocomplete</h2>
+    <form action="teste.html" method="get">
+        <label>
+            Pesquisa:
+            <input type="search" name="pesquisa" autocomplete="off" required>
+        </label>
+        <input type="submit" value="🔍">
+    </form>
+</body>
+</html>

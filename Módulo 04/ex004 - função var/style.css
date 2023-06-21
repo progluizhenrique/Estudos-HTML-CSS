@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+:root {
+    --bg-color: #ffdf9b;
+    --bg-second: #9bffd0;
+    --font-size: 22px;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-size: var(--font-size);
+}
+
+h1 {
+    background-color: var(--bg-second);
+}
+
+@media (max-width: 450px) {
+    :root {
+        --font-size: 14px;
+    }
+}

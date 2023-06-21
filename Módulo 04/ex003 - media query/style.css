@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(165, 165, 165);
+    display: flex;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+@media (min-width: 959px){
+    body {
+        background-color: rgb(128, 55, 59);
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 759px) and (max-width: 959px){
+    body {
+        background-color: rgb(46, 96, 130);
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 759px) {
+    body {
+        background-color: rgb(126, 49, 126);
+        font-size: 13px;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}

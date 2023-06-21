@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+img#fill{
+    width: 600px;
+    height: 550px;
+    object-fit: fill;
+}
+img#contain{
+    width: 600px;
+    height: 550px;
+    object-fit: contain;
+}
+img#cover{
+    width: 600px;
+    height: 550px;
+    object-fit: cover;
+}
+img#none{
+    width: 600px;
+    height: 550px;
+    object-fit: none;
+}

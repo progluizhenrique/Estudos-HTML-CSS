@@ -90,7 +90,7 @@ main > h2 {
     font-family: idroid;
     color: var(--cor4);
     background-image: linear-gradient(to right, var(--cor1), rgba(255, 255, 255, 0));
-    padding: 2px 3px;
+    padding: 2px 5px;
 }
 
 main p {
